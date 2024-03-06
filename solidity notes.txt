@@ -1,0 +1,79 @@
+//SPDX-License-Identifier: MIT
+pragma solidity ^0.8.7;  // this specifies the version of solidity we are using -> 0.8.7 or above
+//if we write only 0.8.7; and no ^ then we are telling it to use the specific version of solidity 0.8.7
+// if we write >=0.8.7 <0.8.12 // then this means to use the version ranging from 0.8.7 to 12 (both included) this is a range basically 
+//here we first have to write 2 things the spdx license identifier and the solidity version
+//the spdx licencing makes the code easier to licence and to share the code easily
+// we use the MIT lisence as it is the least restrictive lisences in the market
+
+
+// to start making a contract(keyword in solidity) we first have to specify the word contract to tell the compiler that the upcoming code is a contract
+//a contract is like a class in any oops language
+contract simplestorage{
+    bool num=true;
+    uint256 public n; // defaukt value is 0
+    function store(uint256 f) public{
+        n=f;
+      }  // function is the keyword for making a function
+    struct People {
+        uint256 favnum;
+        string name;
+    }
+    People[] public people;
+    function add_rec (uint256 fnum, string memory nam) public{
+        people.push(People(fnum,nam));
+    }    // here we require to use the memory keyword as nam is a temporary variable and we don't require it once the record has been uploaded to the list
+    
+}
+// in solidity values such as null and undefined donnot exist
+//when a variable is not given a value it already has a default value depending on the datatype
+// solidity is a statically typed language i.e we have to define the data type of the variable when deploying it lik in python we dont have to define the data type iniyially so it is a dynamically typed language
+//solidity data types are 
+//bool- true false
+//uint<8,16,32,...,256>-unsigned integer in size of bits- whole number- default is 256
+//int<8,16,.....,256>- signed integer in size of bits- defaukt is 256
+//bytes<1,2,...,32>- specifies the number of bytes of the object- if not specify this means it can have any size
+//address-address of account
+//string-use quotes-special form of bytes to store only strings
+//if we specify the size of these objects then we that we want to allocate this much space to the object irrespective of the actual size of the object
+//due to the size constraint on uint and int there comes a range to which they accept values
+//to test out smart contract we use the javascript fake vm blockchain on which we get fake addresses and money etc
+// when we deploy a contract it gets its own address just like aur wallet has its address
+//when we deploy a contract on the blockchian it is the same thing as sending a transaction on the blockchain
+//anytie doing anything on the blockchain which modifies the state of the blockchain acts as a transaction on the blockchain and so it will cost some gas 
+//if we cross a contract on the remix interface this does not mean the contract is permanantly deleted, as the constract can never be deleted as it is saved on the lockchain network
+//visiblity of anything means that if someone can access it from outside,after specifying the data type we write the visibity status of the variable and then the varialble or function name 
+// a public variable is something which can be seen from outside
+//default visibility specifier is internal, it is like protected in cpp, only the current contract and children contractcan use it
+//scope of variable is same here, just see the curly brackets enclosing it , only inside the curly brackets we can use it
+//the more computational operations we require in the function the more computationallly expensive it becomes ie more gas is reqiured
+//when we create a public visibility for the a variable we basically create a getter function for that variable 
+//we can also create a getter function externally using the view keyword, it allows us to create a function which only allows us to view the state of the blockchain, not chainge its state
+//functions which don't change the state of the blockchain don't cost any gas for their execution, we can crete such function using the view and pure keyword
+//the view keyword only allows to see the value of the variable not change its value, the pure keyword does not allow both the functions
+//these functions can cost gas for running only if they are accessed by another gas costing function as then it cost more computation so more gas
+//a pure function is such a function which does something which does not requie the access of the data of the blockchain
+//to create an object class like in js we use the struct type
+//each property of the object class has an index assigned to it stating from 0, in the order the properties are defined
+//even when we create the variable in the normal program there also the order in ehich the variables are created they are given an index starting from 0
+//when we create a new object class using the struct type we basically create a new solidity type the <classname>
+//when we create a new object using this new type, write <classname>({})
+//whenever we define somethong new in solidity we write it in a specific fashion- <solidity type><visibility specifier><variable name> and then its values
+//if we have a lot of records of objects to be created we can use the array data structure by making the array of the new object class solidity type
+//when we make an array we write [] with the type specifier of the array-> <solidity type>[]
+//the array created if we don't add any argument in the [] then it is a dynamic array as it can grow and shrink to any size
+//but if we giive an argument in [] like uint256[3], this will crete an array of data type uint256 and of lenght maximum 3
+//to create a new object there are 2 ways-> <classname>(directly give the values seperated by commas in the same order/index as written in the object class definition)
+//thee second way is to write like in a python dictionary
+//here also the array has the push function for it
+//if there is a red dot at the compiler icon then there is an error in the code, if there is a yellow dot the  there is a warning message it is not an error, ie the code will still get complied
+//evm-> ethereum virtual machine, it helps us to test our ethereum smart contracts on the test netwrok before we deploy it on the main netwrok
+//to store data in solidity evm we can store it in 6 places->stacks, storage, calldata,memory,code,logs
+//calldata is used to store temporary variables whose values cannot be changed once assigned
+//memory stores temporary variable whose values can be changed even after once assigned
+// storage is used to store permanant variable values which can be changed even after once assigned, it is the default type
+// a string is basically an array of bytes,  so some functionalities which apply to arrays also apply to strings
+//the memory keyword is used only for arrays, structs, mappings, and strings not for uint etc as the comiler already knows where for this functin a uint256 will be stored ie in the memory as it is also temporary, but for arrays we have to specify there location as where it will be stored
+//here we also cannot add the storage to the string IF IT IS AFUNCTION PARAMETER as solidity understands that the function parameters are temporay so only memory and callbacks are valid places to store the string
+//here we created the array to be public so 
+

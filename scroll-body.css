@@ -1,0 +1,89 @@
+.poster{
+    margin-top: 0px;
+    width: 100%;
+}
+.about-title-para{
+    color: rgb(66, 145, 215);
+    font-size: 60px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.about-para{
+    color: rgb(168, 203, 234);
+    font-size: 30px;
+    margin-top: 0px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.about-scroll{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.about-extra{
+    height: 70px;
+    width: 100%;
+}
+.details-title-para{
+    color: rgb(66, 145, 215);
+    font-size: 60px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.details-para{
+    color: rgb(168, 203, 234);
+    font-size: 30px;
+    margin-top: 0px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.details-scroll{
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+.details-extra{
+    height: 70px;
+    width: 100%;
+}
+.prizes-title-para{
+    color: rgb(66, 145, 215);
+    font-size: 60px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.prizes-para{
+    color: rgb(168, 203, 234);
+    font-size: 30px;
+    margin-top: 0px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.prizes-scroll{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.prizes-extra{
+    height: 70px;
+    width: 100%;
+}
+.rules-title-para{
+    color: rgb(66, 145, 215);
+    font-size: 60px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.rules-para{
+    color: rgb(168, 203, 234);
+    font-size: 30px;
+    margin-top: 0px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.rules-scroll{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.rules-extra{
+    height: 70px;
+    width: 100%;
+}

@@ -1,0 +1,44 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    height: 120px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgb(17, 2, 98);
+    align-items: center;
+
+}
+.name{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    padding-left: 10px;
+}
+.title{
+    color: lightblue;
+    text-align: center;
+    flex: 1;
+    font-size: 45px;
+    padding-right: 70px;
+}
+.register-button{
+    background-color: lightblue;
+    font-size: 30px;
+    height: 74px;
+    border-radius: 37px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-right: 40px;
+}
+.logo-img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+.logo{
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

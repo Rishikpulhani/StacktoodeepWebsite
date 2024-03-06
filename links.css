@@ -1,0 +1,68 @@
+.smlink{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 70px;
+    background-color: rgb(17, 2, 98);
+    align-items: center;
+    justify-content: space-between;
+}
+.twitter-img{
+    height: 50px;
+    width: 50px;
+    padding-right: 10px;
+}
+.discord-img{
+    height: 50px;
+    width: 50px;
+    padding-right: 10px;
+}
+.linkedin-img{
+    height: 40px;
+    width: 40px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.instagram-img{
+    height: 50px;
+    width: 65px;
+    padding-right: 10px;
+}
+.twitter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: lightblue;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+.discord{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: lightblue;
+    font-size: 30px;
+    font-weight: bold;
+}
+.linkedin{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: lightblue;
+    font-size: 30px;
+    font-weight: bold;
+}
+.instagram{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: lightblue;
+    font-size: 30px;
+    font-weight: bold;
+    padding-right: 20px;
+}

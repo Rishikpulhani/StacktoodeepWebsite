@@ -1,0 +1,61 @@
+.navbar{
+    display: flex;
+    flex-direction: column;
+    width: 76px;
+    left: 0px;
+    bottom: 0px;
+    top: 120px;
+    background-color: rgb(3, 5, 70);
+    color: rgb(99, 197, 239);
+    position: fixed;
+    align-items: center;
+    font-weight: bold;
+}
+.about{
+    padding-top: 30px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.details{
+    padding-top: 30px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rules{
+    padding-top: 30px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.prizes{
+    padding-top: 30px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-logo{
+    object-fit: contain;
+    height: 40px;
+    width: 40px;
+}
+.rules-logo{
+    object-fit: contain;
+    height: 40px;
+    width: 40px;
+}
+.prize-logo{
+    object-fit: contain;
+    height: 40px;
+    width: 40px;
+}
+.details-logo{
+    object-fit: contain;
+    height: 40px;
+    width: 40px;
+}
